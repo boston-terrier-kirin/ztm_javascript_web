@@ -1,0 +1,121 @@
+h3 {
+  margin: 5px;
+}
+
+.container-1 {
+  padding: 10px;
+  background-color: #f19861;
+}
+
+.container-2 {
+  padding: 10px;
+  background-color: #f19861;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: start; /* main-axis 左から右で、start */
+  align-items: start; /* cross-axis 上から下で、start */
+}
+
+.container-3 {
+  height: 400px;
+  padding: 10px;
+  background-color: #f19861;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start; /* main-axis 上から下で、start */
+  align-items: start; /* cross-axis 左から右で、start */
+}
+
+.container-4 {
+  padding: 10px;
+  background-color: #f19861;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: start; /* main-axis 左から右で、start */
+  align-items: start; /* cross-axis 上から下で、start */
+  flex-wrap: wrap; /* 幅が小さくなった場合に、折り返す */
+}
+
+.container-5 {
+  padding: 10px;
+  background-color: #f19861;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /* main-axis 左から右で、space-between */
+  align-items: start; /* cross-axis 上から下で、start */
+}
+
+.container-6 {
+  padding: 10px;
+  background-color: #f19861;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; /* main-axis 左から右で、space-evenly */
+  align-items: start; /* cross-axis 上から下で、start */
+}
+
+.container-7 {
+  padding: 10px;
+  background-color: #f19861;
+  height: 200px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; /* main-axis 左から右で、start */
+  align-items: center; /* cross-axis 上から下で、center 高さがある場合は有効になる。 */
+}
+
+.container-8 {
+  padding: 10px;
+  background-color: #f19861;
+  height: 200px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; /* main-axis 左から右で、start */
+  align-items: stretch; /* cross-axis 上から下で、stretch 高さがある場合は有効になる。 */
+}
+
+.container-9 {
+  padding: 10px;
+  background-color: #f19861;
+  height: 200px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; /* main-axis 左から右で、start */
+  align-items: start; /* cross-axis 上から下で、start 高さがある場合は有効になる。 */
+}
+
+.container-10 {
+  padding: 10px;
+  background-color: #f19861;
+  height: 200px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; /* main-axis 左から右で、start */
+  align-items: baselines; /* cross-axis 上から下で、baseline 高さがある場合は有効になる。 */
+}
+
+.item {
+  padding: 30px;
+  margin: 10px;
+  background-color: #06af8f;
+  text-align: center;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.item-1 {
+  font-size: 50px;
+}
+
+.mb {
+  margin-bottom: 1rem;
+}
