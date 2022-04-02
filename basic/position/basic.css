@@ -1,0 +1,108 @@
+h3 {
+  margin: 5px;
+}
+
+.container {
+  background-color: teal;
+  width: 400px;
+  height: 400px;
+}
+
+/* container-1 */
+.box {
+  width: 300px;
+  height: 100px;
+  color: #fff;
+}
+
+.box-1 {
+  background-color: orangered;
+}
+
+.box-2 {
+  background-color: royalblue;
+
+  /* 元の位置からのposition */
+  position: relative;
+  top: 20px;
+  left: 100px;
+  /* 高さを指定すると、Box-3が下に下がる */
+  height: 150px;
+}
+
+.box-3 {
+  background-color: violet;
+}
+
+/* container-2 */
+.box-4 {
+  background-color: orangered;
+
+  /* box-4が通常フローからは外れるので、box-4の位置にbox-5が行く */
+  position: absolute;
+  /* 直近のrelative要素から見てright: 0 なので、bodyのright: 0 になる。 */
+  right: 0;
+}
+
+.box-5 {
+  /* box-4が通常フローからは外れるので、box-4の位置にbox-5が行く */
+  background-color: royalblue;
+}
+
+.box-6 {
+  background-color: violet;
+}
+
+/* container-3 */
+.container-relative {
+  background-color: teal;
+  width: 400px;
+  height: 400px;
+
+  position: relative;
+}
+
+.box-7 {
+  background-color: orangered;
+  width: 50px;
+  height: 30px;
+  text-align: center;
+
+  /* box-4が通常フローからは外れるので、box-4の位置にbox-5が行く */
+  position: absolute;
+  /* 直近のrelative要素から見てright: 0 なので、container-relativeのright: 0 になる。 */
+  right: 0;
+  top: 0px;
+}
+
+.box-8 {
+  /* box-4が通常フローからは外れるので、box-4の位置にbox-5が行く */
+  background-color: royalblue;
+}
+
+.box-9 {
+  background-color: violet;
+}
+
+/* container-4 */
+.box-10 {
+  background-color: violet;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 30px;
+}
+
+.box-11 {
+  background-color: royalblue;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  height: 30px;
+}
+
+.mb {
+  margin-bottom: 1rem;
+}
