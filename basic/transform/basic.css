@@ -1,0 +1,119 @@
+h3 {
+  margin: 5px;
+}
+
+.box-1 {
+  width: 100px;
+  height: 100px;
+  background-color: teal;
+
+  /* X -> Y */
+  transform: translate(400px, 10px);
+}
+
+/*
+ * translate : transformのプロパティの１つで、X/Y動く方向
+ * transition: 変化の定義
+ */
+.box-2 {
+  width: 100px;
+  height: 100px;
+  background-color: teal;
+
+  /* transformがtransitionする時間 */
+  transition: transform 1s;
+}
+.box-2:hover {
+  /* hoverしたら下に10px */
+  transform: translateY(10px);
+}
+
+.box-3 {
+  width: 100px;
+  height: 100px;
+  background-color: teal;
+
+  /* transformがtransitionする時間 */
+  transition: transform 1s;
+}
+.box-3:hover {
+  transform: rotateX(50deg);
+}
+
+.box-4 {
+  width: 100px;
+  height: 100px;
+  background-color: teal;
+
+  /* transformがtransitionする時間 */
+  transition: transform 1s;
+}
+.box-4:hover {
+  transform: rotate(50deg);
+}
+
+.box-5 {
+  width: 100px;
+  height: 100px;
+  background-color: teal;
+
+  /* transformがtransitionする時間 */
+  transition: transform 1s;
+}
+.box-5:hover {
+  /* width -> height */
+  transform: scale(0.5, 1.5);
+}
+
+.box-6 {
+  width: 100px;
+  height: 100px;
+  background-color: teal;
+
+  /* transformがtransitionする時間 */
+  transition: transform 1s;
+}
+.box-6:hover {
+  transform: skewX(30deg);
+}
+
+.box-7 {
+  width: 100px;
+  height: 100px;
+  background-color: teal;
+
+  /* transformがtransitionする時間 */
+  transition: transform 1s;
+}
+.box-7:hover {
+  transform: skewY(30deg);
+}
+
+.box-8 {
+  width: 100px;
+  height: 100px;
+  background-color: teal;
+
+  /* transformがtransitionする時間 */
+  transition: transform 0.6s;
+}
+.box-8:hover {
+  /* X -> Y */
+  transform: skew(3deg, -3deg);
+}
+
+.box-9 {
+  width: 100px;
+  height: 100px;
+  background-color: teal;
+
+  /* transformがtransitionする時間 */
+  transition: transform 0.6s;
+}
+.box-9:hover {
+  transform: skew(3deg, -3deg) translate(5px, 10px);
+}
+
+.mb {
+  margin-bottom: 1rem;
+}
