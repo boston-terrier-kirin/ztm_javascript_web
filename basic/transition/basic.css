@@ -1,0 +1,55 @@
+h3 {
+  margin: 5px;
+}
+
+.box-1 {
+  width: 200px;
+  height: 200px;
+  background-color: teal;
+}
+.box-1:hover {
+  width: 300px;
+}
+
+.box-2 {
+  width: 200px;
+  height: 200px;
+  background-color: teal;
+
+  /* hoverでどうなるかを定義して、本体の方で変化の定義をする */
+  transition-property: width; /* widthが */
+  transition-delay: 0.5s; /* 0.5秒後に */
+  transition-duration: 1s; /* 1秒間   */
+  transition-timing-function: ease-out;
+}
+.box-2:hover {
+  width: 300px;
+}
+
+.box-3 {
+  width: 200px;
+  height: 200px;
+  background-color: teal;
+
+  /* property -> duration -> delay-> timing-function */
+  transition: width 3s 0s ease-in;
+}
+.box-3:hover {
+  width: 800px;
+}
+
+.box-4 {
+  width: 200px;
+  height: 200px;
+  background-color: teal;
+
+  /* property -> duration -> delay-> timing-function */
+  transition: all 1s 1s ease-in;
+}
+.box-4:hover {
+  width: 800px;
+}
+
+.mb {
+  margin-bottom: 1rem;
+}
