@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Selector</title>
+    <link rel="stylesheet" href="basic.css" />
+    <style>
+      /* 
+        Descendant: space
+        Child: >
+        Adjacent sibling: +
+        General sibling: ~
+       */
+
+      /* Descendant(孫)なので、nestした p もセレクトできる。 */
+      section p {
+        background-color: bisque;
+      }
+
+      /* p の直接の子供がセレクトできる */
+      section > p {
+        background-color: teal;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <p>P 1</p>
+      <h1>Heading 1</h1>
+      <p>P 2</p>
+      <p>P 3</p>
+      <div>
+        <p>Nested P 4</p>
+      </div>
+      <p>P 5</p>
+      <p>P 6</p>
+    </section>
+  </body>
+</html>
